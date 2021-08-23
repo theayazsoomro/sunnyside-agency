@@ -1,0 +1,446 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,400;0,600;1,100&family=Fraunces:wght@400;700;900&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  max-width: 1440px;
+  min-width: 250px;
+  margin: 0 auto;
+  padding: 0;
+  font-family: "Barlow", sans-serif;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+.container {
+  width: 100%;
+  height: auto;
+}
+
+/* Header Section Starts Here */
+.header-section {
+  width: 100%;
+  height: 100vh;
+  background: url("./images/desktop/image-header.jpg");
+  background-size: cover;
+  background-position: center;
+}
+.menu-bar {
+  width: 100%;
+  height: auto;
+  padding: 1.6rem;
+}
+.logo {
+  width: 20%;
+  padding: 15px;
+  float: left;
+}
+.logo img {
+  width: 150px;
+}
+[alt="menu-icon"] {
+  display: none;
+}
+.links {
+  width: 80%;
+  text-align: right;
+  padding: 20px;
+  float: right;
+}
+.links a:not(.cta) {
+  font-family: "Barlow", serif;
+  font-weight: 700;
+  font-size: 18px;
+  padding: 1rem 1.5rem;
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+  line-height: 25px;
+}
+.links .cta {
+  font-family: "Fraunces", serif;
+  font-size: 0.9rem;
+  text-decoration: none;
+  padding: 1rem 1.8rem;
+  margin-left: 15px;
+  background: hsl(0, 0%, 100%);
+  color: #23303e;
+  font-weight: 900;
+  border-radius: 1.8rem;
+}
+.links .cta:hover {
+  color: #ffffff;
+  background: #70cfff;
+}
+h1 {
+  position: absolute;
+  top: 30%;
+  left: 50%;
+  width: 100%;
+  float: left;
+  transform: translate(-50%);
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  text-align: center;
+  font-weight: 900;
+  font-size: 3.3rem;
+  letter-spacing: 7px;
+  color: #ffffff;
+}
+.down-arrow {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%);
+}
+/* Header Section Ends Here */
+
+/* Main Content Section Starts Here */
+.content-section {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  width: 100%;
+  height: auto;
+}
+.content-section img {
+  width: 100%;
+  height: auto;
+}
+.content-section .text {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+.content-section h2 {
+  width: 60%;
+  font-size: 2rem;
+  font-family: "Fraunces", serif;
+  margin: 20px 10px;
+}
+.content-section p {
+  width: 60%;
+  font-size: 1rem;
+  font-family: "Barlow", serif;
+  margin: 10px 10px;
+  opacity: 0.5;
+}
+.content-section a {
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 1rem;
+  font-family: "Fraunces", serif;
+  font-weight: 700;
+  color: #000000;
+  width: 60%;
+  margin: 20px 0 0 0;
+}
+.section-one a::after,
+.section-two a::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: -5px;
+  opacity: 0.5;
+  /* background: hsl(7, 99%, 70%); */
+}
+.section-one a::after {
+  background: #ffff00;
+}
+
+/* Section One */
+.section-one img {
+  grid-column: 2 / -1;
+  grid-row: 1 / 2;
+  height: 100%;
+}
+.section-one .text {
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+}
+.section-two a::after {
+  content: "";
+  display: block;
+  width: 150px;
+  height: 10px;
+  border-radius: 10px;
+  margin-top: -5px;
+  opacity: 0.5;
+  background: hsl(7, 99%, 70%);
+}
+
+/* Section Two */
+.section-two img {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+  height: 100%;
+}
+.section-two .text {
+  grid-column: 2 / 3;
+  grid-row: 2 / 3;
+}
+
+/* Section Three */
+.section-three .txt {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: center;
+  padding: 0 100px 100px 100px;
+  width: 100%;
+  height: 100%;
+}
+.section-three h3 {
+  margin-bottom: 20px;
+  font-size: 1.5rem;
+  font-family: "Fraunces", serif;
+  color: hsl(167, 40%, 24%);
+}
+.section-three .photography .txt h3 {
+  color: hsl(198, 62%, 26%);
+}
+.section-three p {
+  margin-top: 0px;
+  font-family: "Barlow", serif;
+}
+.section-three .graphic-design {
+  grid-column: 1/2;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 90vh;
+  background: url("./images/desktop/image-graphic-design.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.section-three .photography {
+  grid-column: 2/3;
+  grid-row: 1 / 2;
+  width: 100%;
+  height: 90vh;
+  background: url("./images/desktop/image-photography.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+/* Section Four */
+.section-four {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 1fr 2fr;
+  width: 100%;
+  height: 100vh;
+}
+h4 {
+  grid-column: 1 / 4;
+  grid-row: 1 / 2;
+  text-align: center;
+  align-self: center;
+  font-size: 1.3rem;
+  font-family: "Fraunces", serif;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+  font-weight: 900;
+  width: 100%;
+  opacity: 0.5;
+}
+.testimonial {
+  align-self: center;
+  width: 100%;
+  height: 100%;
+  padding: 50px;
+  text-align: center;
+}
+.testimonial img {
+  width: 70px;
+  border-radius: 50%;
+}
+h6 {
+  margin: 30px 0 40px 0;
+  font-family: "Barlow", serif;
+  font-size: 1rem;
+  font-weight: 900;
+  opacity: 0.7;
+}
+h5 {
+  font-family: "Fraunces", serif;
+  font-size: 1rem;
+  font-weight: 900;
+}
+.section-four p {
+  width: 100%;
+  font-family: "Barlow", serif;
+  font-size: 0.8rem;
+  font-weight: 900;
+  margin: 15px 0 0 0;
+}
+.test-one {
+  grid-column: 1 / 2;
+  grid-row: 2 / 3;
+}
+.test-two {
+  grid-column: 2/ 3;
+  grid-row: 2 / 3;
+}
+.test-three {
+  grid-column: 3 / 4;
+  grid-row: 2 / 3;
+}
+
+/* Section Five */
+.section-five {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-rows: 100%;
+  width: 100%;
+}
+.section-five img {
+  width: 100%;
+  height: 100%;
+}
+/* Main Content Section Ends Here */
+
+/* Footer Section */
+.footer-section {
+  display: flex;
+  align-content: flex-end;
+  justify-content: flex-start;
+  flex-direction: column;
+  text-align: center;
+  width: 100%;
+  height: 50vh;
+  background: hsl(168, 34%, 41%);
+}
+.footer-section .footer-logo {
+  margin: 40px 0;
+  align-self: center;
+  width: fit-content;
+  font-size: 2rem;
+  font-weight: 900;
+  font-family: "Barlow", serif;
+  color: hsl(167, 40%, 24%);
+}
+.footer-section .footer-logo:hover {
+  cursor: pointer;
+}
+.footer-section .footer-links {
+  margin: 0 0 30px 0;
+}
+.footer-section .footer-links a {
+  margin: 0 10px;
+  font-size: 1rem;
+  text-decoration: none;
+  color: hsl(198, 62%, 26%);
+}
+.footer-section .footer-links a:hover {
+  color: #ffffff;
+}
+.footer-section .footer-icons img {
+  margin: 20px 10px 30px 10px;
+  fill-rule: nonzero;
+  fill: #ffff00;
+}
+.footer-section .footer-icons img:hover {
+  cursor: pointer;
+  fill-rule: nonzero;
+  fill: #ffffff;
+}
+.attribution {
+  font-size: 11px;
+  text-align: center;
+}
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+/******************************** 
+* 1st Break-Point at 1080 Devices
+*********************************/
+@media screen and (max-width: 1080px) {
+  [alt="menu-icon"] {
+    display: block;
+    width: 40px;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+  }
+  .links {
+    display: none;
+  }
+  .header-section .mobile-menu {
+    display: block;
+    width: 100%;
+    height: auto;
+    text-align: center;
+    background: #ffffff;
+    border-radius: 5px;
+  }
+  .header-section .mobile-menu a {
+    display: block;
+    color: #000000;
+    font-size: 1.5rem;
+    padding: 50px 0;
+  }
+  .header-section .mobile-menu .cta {
+    color: #000000;
+  }
+  .header-section .mobile-menu .cta:hover {
+    background: #ffffff;
+    color: #000000;
+  }
+  h1 {
+    font-size: 2.5rem;
+  }
+  .content-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    width: 100%;
+    height: 100%;
+  }
+  .section-one img {
+    width: 100%;
+  }
+  .section-one .text,
+  .section-two .text {
+    padding: 50px 0;
+  }
+  .section-three .txt {
+    padding: 0 0 10px 0;
+    margin: 0;
+  }
+  .section-four h4 {
+    margin: 50px 0;
+  }
+
+  .down-arrow {
+    display: none;
+  }
+  h1 {
+    display: none;
+  }
+  .disabled {
+    display: block;
+  }
+}
+
+/******************************** 
+* 2nd Break-Point at 320 Devices
+*********************************/
+@media screen and (max-width: 320px) {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
